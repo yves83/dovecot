@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  dovecot:
+    image: yveslam/dovecot:v2.3.19
+    ports:
+      - 110:110
+      - 143:143
+      - 587:587
+      - 993:993
+      - 995:995
+    restart: always
+    volumes:
+      - ./conf/:/etc/dovecot/:ro

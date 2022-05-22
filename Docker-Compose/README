@@ -1,0 +1,5 @@
+For testing, you can edit the dovecot-openssl.cnf and run mkcert.sh to generate a self-signed certificate for testing. The SSL Cert will export to conf/ folder.
+
+For production, you have to replace the ssl certificate, dovecot-cert and dovecot-key, with the production certificate.
+
+You can update the configuration file, dovecot.conf, in conf/ folder.
